@@ -10,7 +10,7 @@ public class TryProcessing extends PApplet {
     public static final int INCREMENT_BALL_THREE = 3;
     public static final int INCREMENT_BALL_FOUR = 4;
 
-    int paceOfBallOne = 0;
+    int speedOfBallOne = 0;
     int paceOfBallTwo = 0;
     int paceOfBallThree = 0;
     int paceOfBallFour = 0;
@@ -27,7 +27,7 @@ public class TryProcessing extends PApplet {
 
     @Override
     public void draw() {
-        ellipse(paceOfBallOne++, HEIGHT / HEIGHT_DIVIDER, DIAMETER, DIAMETER);
+        ellipse(speedOfBallOne++, HEIGHT / HEIGHT_DIVIDER, DIAMETER, DIAMETER);
         ellipse(paceOfBallTwo, HEIGHT * INCREMENT_BALL_TWO / HEIGHT_DIVIDER, DIAMETER, DIAMETER);
         paceOfBallTwo += INCREMENT_BALL_TWO;
         ellipse(paceOfBallThree, HEIGHT * INCREMENT_BALL_THREE / HEIGHT_DIVIDER, DIAMETER, DIAMETER);
